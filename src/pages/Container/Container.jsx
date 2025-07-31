@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "../../assets/global/global.scss";
+import "../../assets/global/global.css";
 
 export function Container(props) {
   return (

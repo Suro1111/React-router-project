@@ -4,14 +4,31 @@
     box-sizing: border-box;
 }
 
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
 
 a {
     text-decoration: none;
     color: inherit;
+    transition: .3s;
+    &:hover {
+        color: #039330;
+        scale: 1.1;
+    }
+}
+
+body {
+    font-family: sans-serif;
 }
 
 .active {
-    color: gold;
+    color: #e7840d;
 }
 
 .container {
@@ -19,3 +36,35 @@ a {
     margin: auto;
 }
 
+
+@mixin flex($direction, $justify, $align, $t_a, $gap, $p, $m) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  text-align: $t_a;
+  gap: $gap;
+  padding: $p;
+  margin: $m;
+}
+
+.block {
+    @include flex(row, center, center, center, 20px, 20px, 0);
+    flex-wrap: wrap;
+}
+
+.goback {
+    position: fixed;
+    top: 13px;
+    left: 5px;
+    z-index: 9999;
+    cursor: pointer;
+    background: #585757;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: .3s;
+    &:hover {
+        background: #000;
+    }
+}

@@ -1,0 +1,6 @@
+@import "../../assets/global/global.scss";
+
+.noteFound {
+  height: 80vh;
+  @include flex(row, center, center, center, 0, 0, 0);
+}

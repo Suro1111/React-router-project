@@ -1,0 +1,6 @@
+@import "../../assets/global/global.scss";
+
+.box {
+    @include flex(row, center, center, center, 0, 100px 20px, 0);
+    min-height: 82.3vh;
+}

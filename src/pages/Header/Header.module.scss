@@ -1,0 +1,7 @@
+@import "../../assets/global/global.scss";
+
+header {
+  background: url("../../assets/react.svg") no-repeat center / contain;
+  height: 82.5vh;
+  @include flex(row, center, center, center, 0, 0, 0);
+}

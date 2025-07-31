@@ -1,7 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Outlet } from "react-router-dom";
+import { Nav } from "../Nav/Nav";
+import { Footer } from "../Footer/Footer";
 
-export function Layout() {
+export function Layout({myData}) {
   return (
-    <div>Layout</div>
-  )
+    <>
+      <Nav myData={myData}/>
+      <Outlet />
+      <Footer />
+    </>
+  );
 }
