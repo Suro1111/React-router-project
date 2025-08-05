@@ -1,10 +1,10 @@
-// *JSON data
-import { albums } from "./albums";
-import { comments } from "./comments";
-import { photos } from "./photos";
-import { posts } from "./posts";
-import { todos } from "./todos";
-import { users } from "./users";
+// * JSON links
 
-export { albums, comments, photos, posts, todos, users };
+const albums = "https://jsonplaceholder.typicode.com/albums";
+const comments = "https://jsonplaceholder.typicode.com/comments";
+const photos = "https://jsonplaceholder.typicode.com/photos";
+const posts = "https://jsonplaceholder.typicode.com/posts";
+const todos = "https://jsonplaceholder.typicode.com/todos";
+const users = "https://jsonplaceholder.typicode.com/users";
 
+export {albums, comments, photos, posts, todos, users};
